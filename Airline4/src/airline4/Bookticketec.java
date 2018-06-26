@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *This class allows the user to book tickets for economy class
- * @author SHIVANI B
+ * @author SHIVANI BHOSLE
  */
 class Bookticketec {
     public void book(int ticket){

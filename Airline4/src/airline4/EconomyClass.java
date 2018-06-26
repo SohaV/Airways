@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
  *This class allows the user to input the number of tickets for an economy class
- * @author SHIVANI B
+ * @author SHIVANI BHOSLE
  */
 class EconomyClass {
     
