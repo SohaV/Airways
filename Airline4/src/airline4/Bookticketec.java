@@ -8,19 +8,19 @@ package airline4;
 import java.util.Scanner;
 
 /**
- *This class allows the user to book a seat in the first class
- * @author VAISHNAVI SB
+ *This class allows the user to book tickets for economy class
+ * @author SHIVANI B
  */
-class Bookticketfc {
+class Bookticketec {
     public void book(int ticket){
         
         String name;
         String flight;
         String time;
-        double price;
+        int price;
         
         /**
-         * It asks the user the desired flight details
+         * Asks the user desired flight details
          */
         System.out.println("Enter your name:");
         Scanner input = new Scanner(System.in);
@@ -32,15 +32,14 @@ class Bookticketfc {
         System.out.println("Enter time: 11am or 3pm");
         time = input.nextLine();
         
-        
         TotalCost c = new TotalCost();
-        price = c.costfc(ticket);
+        price = c.costec(ticket);
         
         /**
          * Displays the boarding pass of the user
          */
         System.out.println("Your boarding pass:");
-        System.out.println(" Name: " +name+ " No. of tickets: " +ticket+ " Class: First class Flight: " +flight+ " Time: " +time+ " Total cost: " +price);
+        System.out.println(" Name: " +name+ " No. of tickets: " +ticket+ " Class:Economy Flight: " +flight+ " Time: " +time+ " Total cost:" +price);
         System.out.println("Thank you. Have a safe flight!");
         
     }

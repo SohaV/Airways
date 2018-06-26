@@ -6,8 +6,8 @@
 package airline4;
 
 import java.util.Scanner;
-import airline2.FirstClass;
-import airline2.EconomyClass;
+import airline4.FirstClass;
+import airline4.EconomyClass;
 /**
  *
  * @author SOHA VANKUDRE

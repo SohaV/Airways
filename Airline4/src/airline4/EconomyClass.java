@@ -4,32 +4,35 @@ package airline4;
 import java.util.Scanner;
 
 /**
- *This class allows the user to input the number of tickets for a first class seat
- * @author VAISHNAVI SB
+ *This class allows the user to input the number of tickets for an economy class
+ * @author SHIVANI B
  */
-class FirstClass {
-    public void firstclass(){
+class EconomyClass {
+    
+    public void economyclass(){
+        System.out.println("Welcome to Economy class reservation");
         
-        int[] FCseats = new int[5];
+        int[] ECseats = new int[15];
         int ticket;
         int choice;
-        System.out.println("Welcome to first class reservation");
+        
         
         System.out.println("How many tickets do you want to book?");
         Scanner input = new Scanner(System.in);
         ticket = input.nextInt();
-        if(ticket<=FCseats.length)
+        
+        if(ticket<=ECseats.length)
         {
-            Bookticketfc fc = new Bookticketfc();
-            fc.book(ticket);
+            Bookticketec ec = new Bookticketec();
+            ec.book(ticket);
         }
         
         /**
-         * If there are no seats available in the first class, it directs the user to check for economy seats
+         * If not enough seats, then it directs the user to check first class seats
          */
         else
         {
-            System.out.println("Not enough seats. Do you want to try economy class?");
+            System.out.println("Not enough seats. Do you want to try first class?");
             System.out.println("Enter 1 for Yes or 2 for No:");
             choice = input.nextInt();
             if(choice==1)
@@ -45,10 +48,7 @@ class FirstClass {
        
         
         
+        
     }
+    
 }
-    
-    
-    
-    
-
